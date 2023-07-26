@@ -47,10 +47,11 @@ function SignUpForm() {
         </label>
 
         <button>Submit</button>
-
      </form>
- </>
+   </>
   )
 }
 
 export default SignUpForm
+
+
