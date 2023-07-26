@@ -5,14 +5,22 @@ function Authenticate({token}) {
     const [successMessage, setSuccessMessage] = useState(null);
     const [error, setError] = useState(null);
 
-    async function handelClick () {
+    async function handleClick () {
        try {
+        const response = await fetch ("https://fsa-jwt-practice.herokuapp.com/authenticate", {
+            method: "GET", 
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${token}`,
+            },
+        })
+        const result = await response.json();
+        setSuccessMessage(result.message);
 
        } catch (error) {
         setError(error.message)
        }
-
-    } //last curly of handelClick
+    } //last curly of handleClick
 
   return (
     <>
@@ -22,10 +30,11 @@ function Authenticate({token}) {
          {successMessage && <p>{successMessage}</p>}
          {error && <p>{error}</p>}
 
-         <button onClick={handelClick}>Authenticate Token</button>
+         <button onClick={handleClick}>Authenticate Token</button>
   </div>
   </>
   )
 }
 
 export default Authenticate
+
