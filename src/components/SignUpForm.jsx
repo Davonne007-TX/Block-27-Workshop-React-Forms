@@ -24,7 +24,7 @@ function SignUpForm() {
 
              const result = await response.json();
              console.log(result);
-             setToken(result.token)
+            //  setToken(result.token)
 
         } catch (error) {
             setError(error.message);
@@ -33,7 +33,7 @@ function SignUpForm() {
 
   return (
     <>
-      <h2>Sign Up</h2>
+      <h2>Sign Up For Coupons</h2>
       {error && <p>{error}</p>}
 
       <form onSubmit={handleSubmit}>

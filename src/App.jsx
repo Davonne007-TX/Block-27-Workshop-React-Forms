@@ -13,6 +13,8 @@ function App() {
 
       <div className="myFormContainer">
         <SignUpForm token={token} setToken={setToken} />
+        <br />
+        <hr />
         <Authenticate token={token} setToken={setToken}/>
       </div>
     </>
