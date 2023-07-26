@@ -15,6 +15,7 @@ function Authenticate({token}) {
             },
         })
         const result = await response.json();
+        console.log(result);
         setSuccessMessage(result.message);
 
        } catch (error) {
