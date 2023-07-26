@@ -10,11 +10,18 @@ function SignUpForm() {
         console.log("The page has mounted")
       }, [])
 
+
+    async function handelSubmit(event) {
+        event.preventDefault();
+        console.log("Hellooooo");
+
+    } //last curly to handelSubmit
+
   return (
     <>
       <h2>Sign Up</h2>
 
-      <form>
+      <form onSubmit={handelSubmit}>
         <label>
             Username: {""} 
             <input value={username} onChange={(e) => setUsername(e.target.value)} />
