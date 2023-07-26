@@ -3,6 +3,7 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/*form*/
 form {
     display: flex;
     margin: 0 auto; 
@@ -22,8 +23,8 @@ label {
 input {
     background-color: white;
     width: 250px;
-    font-size: 20pt;
-    font-family: sans-serif;
+    font-size: 18pt;
+    font-family: 'Times New Roman', Times, serif;
     color:black;
     border-radius: 10px;
 }
