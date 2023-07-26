@@ -13,13 +13,19 @@ function SignUpForm() {
 
     async function handelSubmit(event) {
         event.preventDefault();
-        console.log("Hellooooo");
+        
+        try {
+
+        } catch (error) {
+            setError(error.message);
+        }
 
     } //last curly to handelSubmit
 
   return (
     <>
       <h2>Sign Up</h2>
+      {error && <p>{error}</p>}
 
       <form onSubmit={handelSubmit}>
         <label>
