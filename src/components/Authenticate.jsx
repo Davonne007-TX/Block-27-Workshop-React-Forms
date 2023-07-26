@@ -31,7 +31,7 @@ function Authenticate({token}) {
          {successMessage && <p>{successMessage}</p>}
          {error && <p>{error}</p>}
 
-         <button onClick={handleClick}>Authenticate Token</button>
+         <button onClick={handleClick} className="authenticateButton">Authenticate Token</button>
   </div>
   </>
   )

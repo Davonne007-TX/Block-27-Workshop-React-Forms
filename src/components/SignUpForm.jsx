@@ -44,10 +44,10 @@ function SignUpForm() {
 
         <label>
             Password: {""} 
-            <input value={password} onChange={(e) => setPassword(e.target.value)} />
+            <input value={password} onChange={(e) => setPassword(e.target.value)} className="passwordInput"/>
         </label>
 
-        <button>Submit</button>
+        <button className="submitButton">Submit</button>
      </form>
    </>
   )
