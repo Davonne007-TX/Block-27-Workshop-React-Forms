@@ -10,16 +10,24 @@ function SignUpForm() {
         console.log("The page has mounted")
       }, [])
 
-
-    async function handelSubmit(event) {
+    async function handleSubmit(event) {
         event.preventDefault();
         
         try {
+            const response = await fetch("https://fsa-jwt-practice.herokuapp.com/signup", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({username, password}),
+            })
+
+             const result = await response.json();
+             console.log(result);
 
         } catch (error) {
             setError(error.message);
         }
-
     } //last curly to handelSubmit
 
   return (
@@ -27,7 +35,7 @@ function SignUpForm() {
       <h2>Sign Up</h2>
       {error && <p>{error}</p>}
 
-      <form onSubmit={handelSubmit}>
+      <form onSubmit={handleSubmit}>
         <label>
             Username: {""} 
             <input value={username} onChange={(e) => setUsername(e.target.value)} />
