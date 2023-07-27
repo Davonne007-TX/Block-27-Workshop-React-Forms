@@ -12,58 +12,60 @@ function SignUpForm({token, setToken}) {
       }, [])
 
     async function handleSubmit(event) {
-        event.preventDefault();
+      event.preventDefault();
 
-        if(username.length === 0 || password.length === 0) {
-          setError("You must enter a username and password, please try again");
-          return;
-        } else if (username.length < 4 || password < 4 ) {
-          setError("Username and Password needs to be more than 4 characters");
-          return;
-        }
-        
-        try {
-            const response = await fetch("https://fsa-jwt-practice.herokuapp.com/signup", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({username, password}),
-            })
+      if(username.length === 0 || password.length === 0) {
+        setError("You must enter a username and password, please try again");
+        return;
+      } else if (username.length < 4 || password < 4 ) {
+        setError("Username and Password needs to be more than 4 characters");
+        return;
+     }
 
-             const result = await response.json();
-             console.log(result);
-             setToken(result.token)
-             setError(null)
+      try {
+        const response = await fetch("https://fsa-jwt-practice.herokuapp.com/signup", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({username, password}),
+        })
 
-        } catch (error) {
-            setError(error.message);
-        }
+        const result = await response.json();
+        console.log(result);
+        setToken(result.token)
+        setError(null)
+
+      } catch (error) {
+          setError(error.message);
+      }
     } //last curly to handelSubmit
 
   return (
     <>
-      <h2>Sign Up For Coupons</h2>
-      {error && <p>{error}</p>}
+       <h2>Sign Up For Coupons</h2>
+       {error && <p>{error}</p>}
 
-      <form onSubmit={handleSubmit}>
-        <label>
+       <form onSubmit={handleSubmit}>
+         <label>
             Username: {""} 
             <input value={username} onChange={(e) => setUsername(e.target.value)} />      
-        </label>
+         </label>
 
-        <label>
+         <label>
             Password: {""} 
             <input value={password} onChange={(e) => setPassword(e.target.value)} className="passwordInput"/>
-        </label>
+         </label>
 
-        <button className="submitButton">Submit</button>
-     </form>
+         <button className="submitButton">Submit</button>
+      </form>
    </>
   )
 }
 
 export default SignUpForm
+
+
 
 
 
