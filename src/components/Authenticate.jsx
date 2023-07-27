@@ -18,6 +18,11 @@ function Authenticate({token}) {
         console.log(result);
         setSuccessMessage(result.message);
 
+        const username = result.data.username;
+        console.log("Your Username is:", username);
+
+        setSuccessMessage(`Authenticated as ${username}`)
+
        } catch (error) {
         setError(error.message)
        }
