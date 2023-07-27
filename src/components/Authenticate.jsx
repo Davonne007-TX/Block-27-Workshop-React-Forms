@@ -20,7 +20,6 @@ function Authenticate({token}) {
 
         const username = result.data.username;
         console.log("Your Username is:", username);
-        // setSuccessMessage`${username}`
         
         setSuccessMessage(`Authenticated as ${username}`)
   
@@ -42,4 +41,7 @@ function Authenticate({token}) {
 }
 
 export default Authenticate
+
+
+
 

@@ -6,6 +6,7 @@ function SignUpForm({token, setToken}) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
+
     useEffect(() => {
         console.log("The page has mounted")
       }, [])
@@ -63,6 +64,9 @@ function SignUpForm({token, setToken}) {
 }
 
 export default SignUpForm
+
+
+
 
 
 
