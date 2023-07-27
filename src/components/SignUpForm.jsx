@@ -12,6 +12,14 @@ function SignUpForm({token, setToken}) {
 
     async function handleSubmit(event) {
         event.preventDefault();
+
+        if(username.length === 0 || password.length === 0) {
+          setError("You must enter a username and password");
+          return;
+        } else if (username.length < 4 || password < 4 ) {
+          setError("Username and Password needs to be more than 4 characters");
+          return;
+        }
         
         try {
             const response = await fetch("https://fsa-jwt-practice.herokuapp.com/signup", {
@@ -25,6 +33,7 @@ function SignUpForm({token, setToken}) {
              const result = await response.json();
              console.log(result);
              setToken(result.token)
+             setError(null)
 
         } catch (error) {
             setError(error.message);
@@ -39,7 +48,7 @@ function SignUpForm({token, setToken}) {
       <form onSubmit={handleSubmit}>
         <label>
             Username: {""} 
-            <input value={username} onChange={(e) => setUsername(e.target.value)} />
+            <input value={username} onChange={(e) => setUsername(e.target.value)} />      
         </label>
 
         <label>
@@ -54,5 +63,8 @@ function SignUpForm({token, setToken}) {
 }
 
 export default SignUpForm
+
+
+
 
 
