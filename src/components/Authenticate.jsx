@@ -6,6 +6,12 @@ function Authenticate({token}) {
     const [error, setError] = useState(null);
 
     async function handleClick () {
+
+      if(!token) {
+        setError(alert("Please sign up first before you Authenticate Token"));
+        return;
+      }
+      
        try {
         const response = await fetch ("https://fsa-jwt-practice.herokuapp.com/authenticate", {
             method: "GET", 
@@ -31,7 +37,7 @@ function Authenticate({token}) {
   return (
     <>
       <h2>Authenticate</h2>
-      
+
       <img src="./images/tokenImg.jpg" className="tokenImg"/>
 
       {successMessage && <p>{successMessage} {console.log("Good job you did it!")}</p>}
