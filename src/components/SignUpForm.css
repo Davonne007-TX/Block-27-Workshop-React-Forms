@@ -39,7 +39,6 @@ input {
     display: flex;
     justify-content: space-around;
     margin-top: 5px;
-   
 }
 
 .submitButton, 
@@ -90,6 +89,5 @@ p {
     display: block;
     border-radius: 30px;
 }
-
 
 

@@ -15,7 +15,7 @@ function App() {
         <SignUpForm token={token} setToken={setToken} />
         <br />
         <hr />
-        <Authenticate token={token} setToken={setToken} />
+        <Authenticate token={token} setToken={setToken}/>
       </div>
     </>
   )

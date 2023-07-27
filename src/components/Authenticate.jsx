@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-function Authenticate({token}) {
+function Authenticate({ token }) {
     const [successMessage, setSuccessMessage] = useState(null);
     const [error, setError] = useState(null);
 
@@ -28,7 +28,7 @@ function Authenticate({token}) {
         console.log("Your Username is:", username);
         
         setSuccessMessage(`Authenticated as ${username}`)
-
+    
       } catch (error) {
         setError(error.message)
       }

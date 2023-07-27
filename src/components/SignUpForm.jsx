@@ -45,6 +45,7 @@ function SignUpForm({token, setToken}) {
     const resetForm = () => {
       setUsername("");
       setPassword("");
+      setToken(null);
     }
 
   return (
