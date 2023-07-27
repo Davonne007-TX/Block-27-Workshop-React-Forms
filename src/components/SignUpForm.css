@@ -17,27 +17,29 @@ form {
 
 label {
     font-family: 'Lobster Two', cursive;
-    font-size: 18pt;
+    font-size: 16pt;
     padding: 10px;
 }
 
 input {
     background-color: white;
-    width: 250px;
-    font-size: 18pt;
+    width: 190px;
+    font-size: 16pt;
     font-family: 'Times New Roman', Times, serif;
     color:black;
     border-radius: 10px;
 }
 
 .passwordInput {
-    width: 260px;
+    width: 200px;
 }
 
 /*buttons for sign up and authenticate component*/
 .myButtons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 5px;
 }
 
 .submitButton, 
@@ -55,7 +57,7 @@ input {
     border: 2px solid black;
     border-radius: 12px;
     font-size: 14pt;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .submitButton:hover {
