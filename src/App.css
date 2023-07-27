@@ -7,6 +7,8 @@
 h1 {
   font-family: 'Lobster Two', cursive;
   text-align: center;
+  margin-top: 40px;
+  font-size: 24pt;
 }
 
 /*Form*/
@@ -18,8 +20,11 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-top: 40px;
+  margin-top: 80px;
   padding: 10px;
 }
+
+
+
 
 
