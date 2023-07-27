@@ -31,6 +31,8 @@ function Authenticate({token}) {
   return (
     <>
       <h2>Authenticate</h2>
+      
+      <img src="./images/tokenImg.jpg" className="tokenImg"/>
 
       {successMessage && <p>{successMessage} {console.log("Good job you did it!")}</p>}
       {error && <p>{error}</p>}
