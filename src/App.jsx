@@ -5,7 +5,9 @@ import Authenticate from './components/Authenticate'
 
 function App() {
   const [token, setToken] = useState(null);
-
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  
   return (
     <>
       <h1>React Forms<br/>
@@ -15,7 +17,7 @@ function App() {
         <SignUpForm token={token} setToken={setToken} />
         <br />
         <hr />
-        <Authenticate token={token} setToken={setToken}/>
+        <Authenticate token={token} setToken={setToken} setUsername={setUsername} setPassword={setPassword} username={username}/>
       </div>
     </>
   )
