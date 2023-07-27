@@ -1,6 +1,7 @@
 h2 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
 }
 
 /*form*/
@@ -64,8 +65,12 @@ input {
     cursor: pointer;
 }
 
-.ourSuccessMessage {
-    color: red;
+p {
+   font-family: 'Lobster Two', cursive;
+   text-align: center;
+   font-size: 18pt;
+   color: black;
 }
+
 
 

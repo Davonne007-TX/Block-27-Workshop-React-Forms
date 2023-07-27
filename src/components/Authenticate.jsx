@@ -20,9 +20,10 @@ function Authenticate({token}) {
 
         const username = result.data.username;
         console.log("Your Username is:", username);
-
+        // setSuccessMessage`${username}`
+        
         setSuccessMessage(`Authenticated as ${username}`)
-
+  
        } catch (error) {
         setError(error.message)
        }
@@ -30,14 +31,12 @@ function Authenticate({token}) {
 
   return (
     <>
-    <div>
-        <h2>Authenticate</h2>
+      <h2>Authenticate</h2>
 
-         {successMessage && <p>{successMessage} {console.log("Good job you did it!")}</p>}
-         {error && <p>{error}</p>}
+      {successMessage && <p>{successMessage} {console.log("Good job you did it!")}</p>}
+      {error && <p>{error}</p>}
 
-         <button onClick={handleClick} className="authenticateButton">Authenticate Token</button>
-  </div>
+      <button onClick={handleClick} className="authenticateButton">Authenticate Token</button>
   </>
   )
 }
