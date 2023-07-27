@@ -41,6 +41,12 @@ function SignUpForm({token, setToken}) {
       }
     } //last curly to handelSubmit
 
+    //to reset the form
+    const resetForm = () => {
+      setUsername("");
+      setPassword("");
+    }
+
   return (
     <>
        <h2>Sign Up For Coupons</h2>
@@ -58,6 +64,7 @@ function SignUpForm({token, setToken}) {
          </label>
 
          <button className="submitButton">Submit</button>
+         <input type="reset" value="reset" className="resetForm" onClick={resetForm} />
       </form>
    </>
   )
