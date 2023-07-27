@@ -54,7 +54,7 @@ function SignUpForm({token, setToken}) {
 
          <label>
             Password: {""} 
-            <input value={password} onChange={(e) => setPassword(e.target.value)} className="passwordInput"/>
+            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="passwordInput"/>
          </label>
 
          <button className="submitButton">Submit</button>
