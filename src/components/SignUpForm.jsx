@@ -63,8 +63,10 @@ function SignUpForm({token, setToken}) {
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="passwordInput"/>
          </label>
 
-         <button className="submitButton">Submit</button>
-         <input type="reset" value="reset" className="resetForm" onClick={resetForm} />
+        <div className="myButtons">
+          <button className="submitButton">Submit</button>
+          <input type="reset" value="Reset" className="resetForm" onClick={resetForm} />
+        </div>
       </form>
    </>
   )

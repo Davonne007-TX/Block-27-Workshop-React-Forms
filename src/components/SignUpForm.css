@@ -35,7 +35,16 @@ input {
 }
 
 /*buttons for sign up and authenticate component*/
-.submitButton, .authenticateButton {
+.myButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+   
+}
+
+.submitButton, 
+.authenticateButton,
+.resetForm {
     width: 100%;
     max-width: 120px;
     margin-left: auto;
@@ -51,11 +60,12 @@ input {
     margin-top: 10px;
 }
 
-.authenticateButton {
-    margin-bottom: 10px;;
+.submitButton:hover {
+    color: #EE6D70;
+    cursor: pointer;
 }
 
-.submitButton:hover {
+.resetForm:hover {
     color: #EE6D70;
     cursor: pointer;
 }
