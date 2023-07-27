@@ -15,7 +15,7 @@ function SignUpForm({token, setToken}) {
         event.preventDefault();
 
         if(username.length === 0 || password.length === 0) {
-          setError("You must enter a username and password");
+          setError("You must enter a username and password, please try again");
           return;
         } else if (username.length < 4 || password < 4 ) {
           setError("Username and Password needs to be more than 4 characters");

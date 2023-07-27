@@ -7,7 +7,7 @@ function Authenticate({token}) {
 
     async function handleClick () {
       if(!token) {
-        setError(alert("Please sign up first before you Authenticate Token"));
+        setError(alert("Please sign up first before you authenticate a token"));
         return;
       }
        try {
