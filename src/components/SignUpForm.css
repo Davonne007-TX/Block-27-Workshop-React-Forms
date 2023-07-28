@@ -23,12 +23,13 @@ label {
     font-size: 16pt;
     padding: 0;
     display: flex;
+    justify-content: center;
     margin-top: 35px;
 }
 
 input {
     background-color: white;
-    width: 250px;
+    width: 220px;
     font-size: 16pt;
     font-family: 'Times New Roman', Times, serif;
     color:black;
@@ -36,17 +37,17 @@ input {
 }
 
 .passwordInput {
-    width: 262px;
+    width: 220px;
 }
 
 /*buttons for sign up and authenticate component*/
 .myButtons {
     display: flex;
-    align-items: center;
-    margin: 32px;
+    margin: 25px;
     margin-top: 20px;
     margin-bottom: 10px;
-    padding: 0;
+    padding: 20px;
+    margin-left: 90px;
 }
 
 .submitButton, 
