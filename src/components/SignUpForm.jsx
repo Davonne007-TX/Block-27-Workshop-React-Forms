@@ -50,7 +50,7 @@ function SignUpForm({token, setToken}) {
 
   return (
     <>
-       <h2>Sign Up For Coupons!!!!!!!!!!!</h2>
+       <h2>Sign Up For Coupons</h2>
        {error && <p>{error}</p>}
 
        <form onSubmit={handleSubmit}>
