@@ -49,7 +49,7 @@ function SignUpForm({ setToken }) {
 
   return (
     <>
-      <div class="myForm">
+      <div className="myForm">
         <h2>Sign Up For Coupons</h2>
         {error && <p>{error}</p>}
 
