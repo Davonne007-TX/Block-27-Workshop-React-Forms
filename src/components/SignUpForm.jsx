@@ -49,25 +49,28 @@ function SignUpForm({ setToken }) {
 
   return (
     <>
-       <h2>Sign Up For Coupons</h2>
-       {error && <p>{error}</p>}
+      <div class="myForm">
+        <h2>Sign Up For Coupons</h2>
+        {error && <p>{error}</p>}
 
-       <form onSubmit={handleSubmit}>
-         <label>
-            Username: {""} 
-            <input value={username} onChange={(e) => setUsername(e.target.value)} />      
-         </label>
+        <form onSubmit={handleSubmit}>
+           <label>
+             Username: {""} 
+             <input value={username} onChange={(e) => setUsername(e.target.value)} />      
+           </label>
 
-         <label>
-            Password: {""} 
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="passwordInput"/>
-         </label>
+          <label>
+             Password: {""} 
+             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="passwordInput"/>
+          </label>
 
-        <div className="myButtons">
-          <button className="submitButton">Submit</button>
-          <input type="reset" value="Reset" className="resetForm" onClick={resetForm} />
-        </div>
-      </form>
+
+           <div className="myButtons">
+             <button className="submitButton">Submit</button>
+             <input type="reset" value="Reset" className="resetForm" onClick={resetForm} />
+           </div>
+        </form>
+      </div>
    </>
   )
 }
