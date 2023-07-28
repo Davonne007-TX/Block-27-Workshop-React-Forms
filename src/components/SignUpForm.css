@@ -10,6 +10,7 @@ h2 {
     padding: 0;
 }
 
+/*my form*/
 .myForm {
     width: 100%;
     max-width: 550px;
@@ -36,8 +37,22 @@ input {
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 390px) {
+    input {
+        width: 150px;
+        font-size: 12pt;
+    }
+}
+
 .passwordInput {
     width: 220px;
+}
+
+@media only screen and (max-width: 390px) {
+    .passwordInput {
+        width: 150px;
+        font-size: 12pt;
+    }
 }
 
 /*buttons for sign up and authenticate component*/
@@ -50,6 +65,20 @@ input {
     margin-left: 90px;
 }
 
+@media only screen and (max-width: 390px) {
+    .myButtons {
+        width: 130px;
+        display: block;   
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .myButtons {
+        width: 130px;
+        display: block;   
+    }
+}
+    
 .submitButton, 
 .authenticateButton,
 .resetForm {
