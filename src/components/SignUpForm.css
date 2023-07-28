@@ -59,6 +59,11 @@ input {
     margin-top: 15px;
 }
 
+.authenticateButton {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
 .submitButton:hover {
     color: #EE6D70;
     cursor: pointer;
@@ -89,5 +94,8 @@ p {
     display: block;
     border-radius: 30px;
 }
+
+
+
 
 
