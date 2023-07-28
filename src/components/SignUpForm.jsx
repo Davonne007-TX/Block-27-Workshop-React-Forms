@@ -42,10 +42,9 @@ function SignUpForm({token, setToken}) {
     } //last curly to handelSubmit
 
     //to reset the form
-    const resetForm = () => {
+    function resetForm () {
       setUsername("");
       setPassword("");
-      setToken(null);
     }
 
   return (
@@ -74,12 +73,6 @@ function SignUpForm({token, setToken}) {
 }
 
 export default SignUpForm
-
-
-
-
-
-
 
 
 
