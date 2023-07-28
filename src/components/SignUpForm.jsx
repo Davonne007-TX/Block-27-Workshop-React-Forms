@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect} from 'react'
 import './SignUpForm.css' 
 
-function SignUpForm({token, setToken}) {
+function SignUpForm({ setToken }) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
