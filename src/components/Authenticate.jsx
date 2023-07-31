@@ -28,7 +28,8 @@ function Authenticate({ token }) {
         console.log("Your Username is:", username);
         
         setSuccessMessage(`Authenticated as ${username}`)
-    
+        alert("Token successful! Reset form to get new token")
+
       } catch (error) {
         setError(error.message)
       }
@@ -36,7 +37,7 @@ function Authenticate({ token }) {
 
   return (
     <>
-      <h2>Authenticate</h2>
+      <h2>Next, Authenticate</h2>
 
       <img src="./images/tokenImg.jpg" className="tokenImg"/>
 
