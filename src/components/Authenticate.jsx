@@ -28,8 +28,8 @@ function Authenticate({ token }) {
         console.log("Your Username is:", username);
         
         setSuccessMessage(`Authenticated as ${username}`)
-        alert("Token successful! Reset form to get new token")
-
+        alert("Token successful! See console log for sign up bonus. Rest form to get new token")
+  
       } catch (error) {
         setError(error.message)
       }
@@ -50,6 +50,7 @@ function Authenticate({ token }) {
 }
 
 export default Authenticate
+
 
 
 

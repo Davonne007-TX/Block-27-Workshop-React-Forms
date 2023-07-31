@@ -57,7 +57,7 @@ function SignUpForm({ setToken }) {
 
         <form onSubmit={handleSubmit}>
            <label>
-             Username: {""} 
+             Username: {""}
              <input value={username} placeholder="Enter Username" onChange={(e) => setUsername(e.target.value)} />      
            </label>
 
