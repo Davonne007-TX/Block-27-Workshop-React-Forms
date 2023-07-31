@@ -73,7 +73,6 @@ function SignUpForm({ setToken }) {
               className="passwordInput"/>
           </label>
 
-
            <div className="myButtons">
              <button className="submitButton">Submit</button>
              <input type="reset" value="Reset Form" className="resetForm" onClick={resetForm} />
@@ -85,6 +84,8 @@ function SignUpForm({ setToken }) {
 }
 
 export default SignUpForm
+
+
 
 
 
