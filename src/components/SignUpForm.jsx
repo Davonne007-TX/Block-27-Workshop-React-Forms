@@ -36,6 +36,8 @@ function SignUpForm({ setToken }) {
         setToken(result.token)
         setError(null)
 
+        alert("Open up console log to see if sign up was successful")
+
       } catch (error) {
           setError(error.message);
       }
@@ -56,12 +58,12 @@ function SignUpForm({ setToken }) {
         <form onSubmit={handleSubmit}>
            <label>
              Username: {""} 
-             <input value={username} onChange={(e) => setUsername(e.target.value)} />      
+             <input value={username} placeholder="Enter Username" onChange={(e) => setUsername(e.target.value)} />      
            </label>
 
           <label>
              Password: {""} 
-             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="passwordInput"/>
+             <input type="password" placeholder="Enter Password" value={password} onChange={(e) => setPassword(e.target.value)} className="passwordInput"/>
           </label>
 
 
