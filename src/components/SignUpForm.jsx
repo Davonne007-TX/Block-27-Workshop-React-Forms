@@ -58,12 +58,19 @@ function SignUpForm({ setToken }) {
         <form onSubmit={handleSubmit}>
            <label>
              Username: {""}
-             <input value={username} placeholder="Enter Username" onChange={(e) => setUsername(e.target.value)} />      
+             <input
+              value={username} 
+              placeholder="Enter Username" 
+              onChange={(e) => setUsername(e.target.value)} />      
            </label>
 
           <label>
              Password: {""} 
-             <input type="password" placeholder="Enter Password" value={password} onChange={(e) => setPassword(e.target.value)} className="passwordInput"/>
+             <input
+              type="password" 
+              placeholder="Enter Password" 
+              value={password} onChange={(e) => setPassword(e.target.value)} 
+              className="passwordInput"/>
           </label>
 
 
