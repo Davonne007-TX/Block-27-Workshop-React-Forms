@@ -75,7 +75,10 @@ function SignUpForm({ setToken }) {
 
            <div className="myButtons">
              <button className="submitButton">Submit</button>
-             <input type="reset" value="Reset Form" className="resetForm" onClick={resetForm} />
+             <input 
+             type="reset" 
+             value="Reset Form" 
+             className="resetForm" onClick={resetForm} />
            </div>
         </form>
       </div>
