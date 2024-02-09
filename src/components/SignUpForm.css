@@ -1,138 +1,140 @@
 h2 {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 20px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22pt;
+  margin-top: 20px;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*my form*/
 .myForm {
-    width: 100%;
-    max-width: 550px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  max-width: 550px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 label {
-    font-family: 'Lobster Two', cursive;
-    font-size: 16pt;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
+  font-family: sans-serif;
+  font-size: 16pt;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 2px;
 }
 
 input {
-    background-color: white;
-    width: 220px;
-    font-size: 16pt;
-    font-family: 'Times New Roman', Times, serif;
-    color:black;
-    border-radius: 10px;
+  background-color: white;
+  width: 220px;
+  font-size: 16pt;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  border-radius: 10px;
+  padding: 4px;
+  margin-left: 10px;
 }
 
 @media only screen and (max-width: 390px) {
-    input {
-        width: 150px;
-        font-size: 12pt;
-    }
+  input {
+    width: 150px;
+    font-size: 12pt;
+  }
 }
 
 .passwordInput {
-    width: 220px;
+  width: 220px;
 }
 
 @media only screen and (max-width: 390px) {
-    .passwordInput {
-        width: 150px;
-        font-size: 12pt;
-    }
+  .passwordInput {
+    width: 150px;
+    font-size: 12pt;
+  }
 }
 
 /*buttons for sign up and authenticate component*/
 .myButtons {
-    display: flex;
-    margin: 25px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 20px;
-    margin-left: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 390px) {
-    .myButtons {
-        width: 130px;
-        display: block;   
-    }
+  .myButtons {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 460px) {
-    .myButtons {
-        width: 130px;
-        display: block;   
-    }
-}
-    
-.submitButton, 
-.authenticateButton,
-.resetForm {
-    width: 100%;
-    max-width: 110px;
+  .myButtons {
+    width: 130px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    background-color: white;
-    color: black;
-    font-family: 'Lobster Two', cursive;
-    border: 2px solid black;
-    border-radius: 12px;
-    font-size: 14pt;
-    margin-top: 15px;
+  }
 }
 
-.authenticateButton {
-    margin-bottom: 20px;
-    margin-top: 30px;
+.submitButton,
+.authenticateToken,
+.resetForm {
+  width: 100%;
+  max-width: 110px;
+  margin: 0 5px;
+  padding: 8px;
+  background-color: white;
+  color: black;
+  font-family: "Lobster Two", cursive;
+  border: 2px solid black;
+  border-radius: 12px;
+  font-size: 14pt;
+  margin-top: 15px;
+}
+
+.authenticateToken {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .submitButton:hover {
-    color: #EE6D70;
-    cursor: pointer;
+  color: #ee6d70;
+  cursor: pointer;
 }
 
 .resetForm:hover {
-    color: #EE6D70;
-    cursor: pointer;
+  color: #ee6d70;
+  cursor: pointer;
 }
 
 .authenticateButton:hover {
-    color: #EE6D70;
-    cursor: pointer;
+  color: #ee6d70;
+  cursor: pointer;
 }
 
 p {
-   font-family: 'Lobster Two', cursive;
-   text-align: center;
-   font-size: 18pt;
-   color: black;
+  font-family: "Lobster Two", cursive;
+  text-align: center;
+  font-size: 18pt;
+  color: black;
 }
 
 .tokenImg {
-    width: 100%;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 30px;
-    margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 30px;
+  margin-top: 20px;
 }
-
-
